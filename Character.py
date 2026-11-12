@@ -8,6 +8,9 @@ class Character:
         self.level = level
         self.xp = xp
 
+    def stats(self):
+        print(f"Name: {self.name} Life: {self.life} Attack: {self.attack} Defence: {self.defence} Level: {self.level} Xp: {self.xp}")
+
     def attack_target(self, targed):
         targed.attack_targed(self.attack)
         pass
